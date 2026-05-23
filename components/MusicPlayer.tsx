@@ -13,20 +13,40 @@ interface Track {
 
 const tracks: Track[] = [
   {
+    name: "THE WORLD BEGINS",
+    author: "JROBERTS",
+    img: "https://musicMeg.b-cdn.net/Slow_motion.gif",
+    audio: "https://musicMeg.b-cdn.net/How%20the%20World%20Begins.mp3",
+    duration: "4:19",
+  },
+  {
+    name: "NEW DAYS",
+    author: "JROBERTS",
+    img: "https://musicMeg.b-cdn.net/Man_and_woman_by_campfire_202605131558.jpeg",
+    audio: "https://musicMeg.b-cdn.net/New%20Days.mp3",
+    duration: "4:45",
+  },
+  {
+    name: "ROADS WE KNEW",
+    author: "JROBERTS",
+    img: "https://musicMeg.b-cdn.net/wag.jpeg",
+    audio: "https://musicMeg.b-cdn.net/Wagoneer%20Roads.mp3",
+    duration: "2:59",
+  },
+  {
+    name: "ALL AT ONCE",
+    author: "JROBERTS",
+    img: "https://musicMeg.b-cdn.net/The_three_boys_are_in_the_garden_picking_blac.gif",
+    audio: "https://musicMeg.b-cdn.net/All%20At%20Once.mp3",
+    duration: "4:05",
+  },
+  {
     name: "WHAT ARE YOU WAITING FOR",
     author: "JROBERTS",
-    img: "https://musicmeg.b-cdn.net/waitingfor.jpeg",
+    img: "https://musicMeg.b-cdn.net/waitingfor.jpeg",
     audio: "https://musicMeg.b-cdn.net/What%20Are%20You%20Waiting%20For.mp3",
     duration: "4:19",
   },
-  // Add more tracks here in the same format:
-  // {
-  //   name: "SONG TITLE",
-  //   author: "ARTIST",
-  //   img: "https://musicmeg.b-cdn.net/image.jpeg",
-  //   audio: "https://musicMeg.b-cdn.net/Song%20Name.mp3",
-  //   duration: "0:00",
-  // },
 ];
 
 export default function MusicPlayer() {
@@ -293,7 +313,7 @@ export default function MusicPlayer() {
             <h3 className="px-5 py-3 text-sm font-medium text-muted-foreground border-b border-border">
               Playlist
             </h3>
-            <div className="max-h-64 overflow-y-auto">
+            <div className="max-h-80 overflow-y-auto">
               {tracks.map((track, index) => (
                 <button
                   key={index}
