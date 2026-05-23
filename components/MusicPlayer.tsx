@@ -47,6 +47,13 @@ const tracks: Track[] = [
     audio: "https://musicMeg.b-cdn.net/What%20Are%20You%20Waiting%20For.mp3",
     duration: "4:19",
   },
+  {
+    name: "HOMETOWN FEELING",
+    author: "JROBERTS",
+    img: "https://musicMeg.b-cdn.net/fam.png",
+    audio: "https://musicMeg.b-cdn.net/Hometown%20Feeling.mp3",
+    duration: "3:30",
+  },
 ];
 
 export default function MusicPlayer() {
